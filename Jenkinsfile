@@ -9,13 +9,13 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/your-user/wanderu-clone.git'
+                git url: 'https://github.com/Ganesh16091/Ticket-Booking.git'
             }
         }
         stage('Build Docker Image') {
             steps {
                 script {
-                    sh 'docker build -t $IMAGE_NAME .'
+                    sh 'docker build -t $Ticket-Booking.'
                 }
             }
         }
